@@ -1,0 +1,109 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F33A6A;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    45% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.iamsorry {
+    font-size: clamp(70px, 40vw, 120px); /* Responsive font size */
+    animation: wobble 6s infinite;
+    cursor: pointer;
+    padding: 20px;
+    margin: 80px 0 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/* QA Section */
+#qaSection {
+    margin-top: 200px;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.qa {
+    background-color: white;
+    color: #F33A6A;
+    padding: 30px 16px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: "Dancing Script", cursive;
+    width: 90%;
+}
+
+.qa h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.qa-item {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.qa-item p {
+    margin: 5px 0;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#nextBtn {
+    background-color: white;
+    color: #F33A6A;
+    border: 2px ;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Dancing Script", cursive;
+    transition: background 0.3s ease;
+}
+
+#nextBtn:hover {
+    background-color: #F33A6A;
+    color: white;
+}
+
+.scroll-hint {
+    margin: 40px 0;
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+/* Optional animation for attention */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
